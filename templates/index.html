@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER-Student</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: #2b2b2b;
+            
+        }
+        .font{
+            font-family: verdana;
+            
+        }
+        .card{
+            box-shadow: 2px 1px 20px 0px black;
+        }
+        .card{
+            background-color: #2b2b2b;
+            color: white;
+        }
+        .btn{
+            box-shadow: 2px 1px 20px 0px black;
+          
+        }
+        .mybtn{
+            background-color: #2b2b2b;
+            color: white;
+        }
+        .mybtn:hover{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-3">
+        
+        <div class="row ">
+            <div class="col-md">
+                <h2 class="mt-5 display-4 font-weight-bolder text-warning">GET YOUR IDEA INTO REALITY</h2> 
+                <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nostrum molestias perferendis nulla animi labore unde reiciendis dolorem hic numquam quod adipisci repellendus beatae illo earum alias cum non deserunt.
+                Rem eum sunt sit eligendi aperiam, atque quia tempore tenetur repellat voluptates tempora ab sapiente? Quidem quaerat aut incidunt doloremque tenetur cum qui, omnis porro et mollitia architecto dolorem assumenda.
+                Iste, facilis cumque. Odio tenetur, est nulla consequuntur harum fugiat temporibus, fuga quos delectus iure similique sed? Ipsam quasi facilis harum maxime a. Ratione aperiam assumenda voluptatem repellat laboriosam officiis!</p>
+               <img src="/static/undraw_dev_productivity_umsq-removebg-preview.png" alt="" class="img-fluid
+                    w-50 d-flex">
+                
+                <a href="/user" class="btn  ml-5 mb-3 mybtn">View Students</a>
+
+            </div>
+            
+            <div class="col-md mt-5">
+                <div class="card w-100 h-auto p-5">
+                    <div class="card-haeder">
+                        <h2 class="card-title text-danger">Registration</h2>
+                    </div>
+                    <div class="card-body">
+                        <form action="{{ user }}" method="POST">
+                            <div class="form-group">
+                                <label for="user">First Name</label>
+                                <input type="text" name="fname" id="user" class="form-control" placeholder="Enter Your First name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pass">Last Name</label>
+                                <input type="text" name="lname" id="pass" class="form-control" placeholder="Enter Ur Last name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" name="mail" id="email" class="form-control" placeholder="Enter Your Email Address">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="number">Mobile Number</label>
+                                <input type="text" name="mobile" id="number" class="form-control" placeholder="Enter Mobile Number">
+                            </div>
+
+                            
+                            <div class="form-group">
+                               
+                                <input type="submit" value="Register" class="form-control btn btn-primary btn-block">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <img src="/static/student.png" alt="he"> -->
+        
+    </div>
+    
+
+</body>
+</html>
